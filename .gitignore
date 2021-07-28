@@ -1,6 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+/setup-files-react-tech-store-master
 /node_modules
 /.pnp
 .pnp.js
