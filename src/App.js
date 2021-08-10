@@ -7,7 +7,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/HomePage";
 import About from "./pages/AboutPage";
 import Default from "./pages/Default";
-import Products from "./pages/Products";
+import Products from "./pages/ProductsPage";
 import Contact from "./pages/ContactPage";
 import SingleProduct from "./pages/SingleProductPage";
 import Cart from "./pages/CartPage";
@@ -22,10 +22,10 @@ export default class App extends Component {
   render() {
     return (
       <>
-        {/* navbar,sidebar,footer,cart */}
         <Navbar />
         <Sidebar></Sidebar>
         <SideCart></SideCart>
+
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
