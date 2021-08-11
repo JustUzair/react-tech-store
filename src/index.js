@@ -8,9 +8,7 @@ import { ProductProvider } from "./context/";
 ReactDOM.render(
   <ProductProvider>
     <Router>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <App />
     </Router>
   </ProductProvider>,
   document.getElementById("root")

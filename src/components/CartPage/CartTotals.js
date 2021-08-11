@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { RiArrowGoBackLine } from "react-icons/ri";
 import { BsFillTrashFill } from "react-icons/bs";
+import PayPalBtn from "./PayPalBtn";
 import { ProductConsumer } from "../../context/context";
-export default function CartTotals() {
+export default function CartTotals({ history }) {
   return (
     <div className="container">
       <div className="row">
@@ -22,6 +23,15 @@ export default function CartTotals() {
                   <h3 className="cart-values">
                     Total : <span>${cartTotal}</span>
                   </h3>
+                  {cart.length > 0 ? (
+                    <PayPalBtn
+                      history={history}
+                      clearCart={clearCart}
+                      cartTotal={cartTotal}
+                    ></PayPalBtn>
+                  ) : (
+                    ""
+                  )}
                 </div>
                 {cart.length > 0 ? (
                   <button

@@ -5,7 +5,7 @@ import CartColumns from "./CartColumns";
 import CartList from "./CartList";
 
 import { ProductConsumer } from "../../context/context";
-export default function Cart() {
+export default function Cart({ history }) {
   return (
     <ProductConsumer>
       {value => {
@@ -54,7 +54,7 @@ export default function Cart() {
               </h1>
             )}
             {/* cart totals */}
-            <CartTotals></CartTotals>
+            <CartTotals history={history}></CartTotals>
           </section>
         );
       }}
