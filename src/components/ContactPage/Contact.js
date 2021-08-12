@@ -12,7 +12,7 @@ export default function Contact() {
               encType="multipart/form-data"
               method="post"
               className="mt-5"
-              action="https://formspree.io/f/mqkwypjw"
+              action={`https://formspree.io/f/${process.env.REACT_APP_FORMSPREE}`}
             >
               <div className="form-group">
                 <input
