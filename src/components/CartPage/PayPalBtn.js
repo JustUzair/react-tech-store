@@ -7,7 +7,11 @@ export default class MyApp extends React.Component {
       console.log("The payment was succeeded!", payment);
       this.props.clearCart();
       // this.props.history.push("/");
-      window.location.href = "/";
+
+      alert("Payment Successfull!!");
+      if (window.confirm("Payment Successful!! Go Back To Home Page?")) {
+        window.location.href = "/";
+      }
       // You can bind the "payment" object's value to your state or props or whatever here, please see below for sample returned data
     };
 

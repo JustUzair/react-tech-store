@@ -74,7 +74,7 @@ const NavWrapper = styled.nav`
     display: flex;
     padding: 0.1rem 0.2rem;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     transition: var(--mainTransition);
   }
   .sidebar-icons {
